@@ -1,0 +1,128 @@
+{
+  "base_tests": [
+    {
+      "test_base.py::test_bootstrap_css_included": [
+        "O CSS do Bootstrap está corretamente vinculado. Excelente trabalho!",
+        "O CSS do Bootstrap está ausente. Certifique-se de incluir o link do CSS do Bootstrap na seção <head>."
+      ]
+    },
+    {
+      "test_base.py::test_bootstrap_js_included": [
+        "O JS do Bootstrap está corretamente vinculado. Ótimo trabalho!",
+        "O JS do Bootstrap está ausente. Certifique-se de incluir o arquivo JS do Bootstrap para garantir que os componentes interativos funcionem."
+      ]
+    },
+    {
+      "test_base.py::test_profile_card_class": [
+        "A card de perfil com a classe 'card' está corretamente implementada. Bom trabalho!",
+        "A card de perfil com a classe 'card' está ausente. Certifique-se de implementar a card de perfil usando o componente de card do Bootstrap."
+      ]
+    },
+    {
+      "test_base.py::test_profile_image_class": [
+        "A imagem de perfil possui a classe 'rounded-circle' correta. Bom trabalho!",
+        "A imagem de perfil está sem a classe 'rounded-circle'. Certifique-se de adicionar a classe 'rounded-circle' à imagem para o estilo correto."
+      ]
+    },
+    {
+      "test_base.py::test_user_name_title": [
+        "O nome do usuário está corretamente colocado em uma tag h1, h2 ou h3. Excelente!",
+        "O nome do usuário está ausente ou colocado incorretamente. Certifique-se de que o nome do usuário esteja em uma tag de título como h1, h2 ou h3."
+      ]
+    },
+    {
+      "test_base.py::test_profile_description": [
+        "A descrição do perfil está corretamente incluída. Bom trabalho!",
+        "A descrição do perfil está ausente. Certifique-se de incluir uma breve descrição do perfil dentro de uma tag <p>."
+      ]
+    },
+    {
+      "test_base.py::test_button_class": [
+        "O botão possui a classe 'btn' correta e é interativo. Excelente!",
+        "O botão está sem a classe 'btn' ou não é interativo. Certifique-se de que o botão tenha a classe 'btn' e seja interativo usando JavaScript ou um link."
+      ]
+    },
+    {
+      "test_base.py::test_d_flex_class_usage": [
+        "A classe 'd-flex' foi usada corretamente para o layout. Bom trabalho!",
+        "A classe 'd-flex' está ausente. Por favor, use a classe 'd-flex' para implementar o layout flexível quando necessário."
+      ]
+    },
+    {
+      "test_base.py::test_html_tag_exists": [
+        "A tag <html> está presente corretamente. Bom trabalho!",
+        "A tag <html> está ausente. Certifique-se de incluir a tag <html> para definir o início do documento HTML."
+      ]
+    },
+    {
+      "test_base.py::test_head_tag_exists": [
+        "A tag <head> está corretamente incluída. Bom trabalho!",
+        "A tag <head> está ausente. Certifique-se de que seu HTML contenha uma tag <head> com os metadados e links necessários."
+      ]
+    },
+    {
+      "test_base.py::test_body_tag_exists": [
+        "A tag <body> está corretamente incluída. Excelente!",
+        "A tag <body> está ausente. Certifique-se de que seu HTML inclua a tag <body> para o conteúdo da sua página."
+      ]
+    },
+    {
+      "test_base.py::test_code_indentation": [
+        "O código está bem indentado, com linhas abaixo de 200 caracteres. Bom trabalho!",
+        "Algumas linhas excedem 200 caracteres. Certifique-se de dividir linhas longas em linhas mais curtas para manter a legibilidade."
+      ]
+    }
+  ],
+  "bonus_tests": [
+    {
+      "test_bonus.py::test_responsive_layout": [
+        "O layout se ajusta corretamente para diferentes tamanhos de tela usando o sistema de grade do Bootstrap. Excelente!",
+        "O layout não se ajusta para diferentes tamanhos de tela. Certifique-se de usar as classes de grade do Bootstrap apropriadas para responsividade."
+      ]
+    },
+    {
+      "test_bonus.py::test_custom_button_hover_effect": [
+        "O efeito de hover personalizado para o botão foi implementado corretamente. Bom trabalho!",
+        "O efeito de hover personalizado para o botão está ausente. Por favor, adicione um efeito de hover para melhorar a interatividade do botão."
+      ]
+    },
+    {
+      "test_bonus.py::test_interactive_button": [
+        "O botão é interativo com uma função JavaScript. Excelente!",
+        "O botão não é interativo. Certifique-se de que o botão tenha uma função 'onclick' ou um link para torná-lo interativo."
+      ]
+    },
+    {
+      "test_bonus.py::test_profile_image_alt_text": [
+        "A imagem de perfil tem o atributo 'alt' correto para acessibilidade. Bom trabalho!",
+        "A imagem de perfil está sem o atributo 'alt'. Por favor, adicione o atributo 'alt' para melhorar a acessibilidade."
+      ]
+    },
+    {
+      "test_bonus.py::test_custom_card_styling": [
+        "O estilo personalizado para o fundo e as bordas da card foi implementado corretamente. Bom trabalho!",
+        "O estilo personalizado para o fundo ou bordas da card está ausente ou foi implementado incorretamente. Por favor, adicione estilos personalizados para melhorar a aparência da card."
+      ]
+    }
+  ],
+  "penalty_tests": [
+    {
+      "test_penalty.py::test_inline_styles": [
+        "Estilos inline foram usados. Por favor, remova todos os estilos inline e use CSS externo ou interno.",
+        "Estilos inline não foram usados corretamente. Bom trabalho!"
+      ]
+    },
+    {
+      "test_penalty.py::test_missing_or_incorrect_alt_text": [
+        "A imagem de perfil está ausente ou com o texto 'alt' incorreto. Por favor, adicione um texto 'alt' apropriado para acessibilidade.",
+        "A imagem de perfil tem o texto 'alt' correto. Excelente!"
+      ]
+    },
+    {
+      "test_penalty.py::test_unnecessary_custom_javascript": [
+        "Foi encontrado JavaScript personalizado desnecessário. Evite usar JavaScript personalizado quando a funcionalidade interna do Bootstrap for suficiente.",
+        "Nenhum JavaScript personalizado desnecessário foi encontrado. Bom trabalho!"
+      ]
+    }
+  ]
+}
