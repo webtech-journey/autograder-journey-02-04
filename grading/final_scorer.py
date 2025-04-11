@@ -18,7 +18,7 @@ class Scorer:
     def set_penalty_score(self,filename):
         self.penalty = get_test_results(self.path.getFilePath(filename))
     def set_final_score(self):
-        final_score = (get_score(self.base[0],12) * 0.8 )+(get_score(self.bonus[0],5) * 0.2) - (get_score(self.penalty[0],3) * 0.3)
+        final_score = (get_score(self.base[0],12) * 0.8 )+(get_score(self.bonus[0],5) * 0.2) - (get_score(self.penalty[0],2) * 0.3)
         self.final_score = final_score
         return final_score
     def get_feedback(self):

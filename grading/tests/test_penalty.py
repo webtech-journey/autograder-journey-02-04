@@ -32,15 +32,4 @@ def test_missing_or_incorrect_alt_text():
     assert img is None or img.get("alt") is None, "Profile image is not missing 'alt' text"
 
 
-# Test 3: Unnecessary custom JavaScript (Penalize)
-def test_unnecessary_custom_javascript():
-    html_content = load_html()
-
-    # Check if there is any unnecessary custom JavaScript for simple tasks
-    script_tags = html_content.find_all("script")
-    for script in script_tags:
-        assert "bootstrap"  in script.get("src",
-                                             ""), "Code does not use unnecessary custom JavaScript"
-
-
 
