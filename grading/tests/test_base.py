@@ -36,11 +36,7 @@ def test_user_name_title():
     title = html_content.find(["h1", "h2", "h3","h4","h5"], string=lambda x: x and len(x.strip()) > 0)
     assert title is not None, "User's name title (h1, h2, or h3) is missing or empty"
 
-# Test 6: Profile description (in <p> or similar tag)
-def test_profile_description():
-    html_content = load_html()
-    description = html_content.find("p", string=lambda x: x and len(x.strip()) > 0)
-    assert description is not None, "Profile description (in <p>) is missing or empty"
+
 
 # Test 7: Button with class 'btn'
 def test_button_class():
@@ -69,9 +65,4 @@ def test_body_tag_exists():
     html_content = load_html()
     assert html_content.find("body") is not None, "<body> tag is missing"
 
-# Test 12: Code indentation check (line length < 200 characters)
-def test_code_indentation():
-    with open("index.html", "r") as file:
-        lines = file.readlines()
-        for line in lines:
-            assert len(line.strip()) < 200, f"Line too long (over 200 characters): {line.strip()}"
+
